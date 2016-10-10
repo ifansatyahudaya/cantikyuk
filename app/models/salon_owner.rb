@@ -5,4 +5,5 @@ class SalonOwner < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :salons, foreign_key: :owner_id
+  has_many :salon_images
 end
