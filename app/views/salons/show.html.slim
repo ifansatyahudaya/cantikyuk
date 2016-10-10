@@ -1,0 +1,21 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @salon.name
+p
+  strong Address:
+  = @salon.address
+p
+  strong Phone:
+  = @salon.phone
+p
+  strong Lat:
+  = @salon.lat
+p
+  strong Lng:
+  = @salon.lng
+
+= link_to 'Edit', edit_salon_path(@salon)
+'|
+= link_to 'Back', salons_path

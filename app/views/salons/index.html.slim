@@ -1,0 +1,29 @@
+h1 Listing salons
+
+table
+  thead
+    tr
+      th Name
+      th Address
+      th Phone
+      th Lat
+      th Lng
+      th
+      th
+      th
+
+  tbody
+    - @salons.each do |salon|
+      tr
+        td = salon.name
+        td = salon.address
+        td = salon.phone
+        td = salon.lat
+        td = salon.lng
+        td = link_to 'Show', salon
+        td = link_to 'Edit', edit_salon_path(salon)
+        td = link_to 'Destroy', salon, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Salon', new_salon_path

@@ -1,0 +1,2 @@
+class SalonImage < ApplicationRecord
+end

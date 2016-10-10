@@ -1,0 +1,24 @@
+= form_for @salon do |f|
+  - if @salon.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@salon.errors.count, "error")} prohibited this salon from being saved:"
+      ul
+        - @salon.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :address
+    = f.text_field :address
+  .field
+    = f.label :phone
+    = f.text_field :phone
+  .field
+    = f.label :lat
+    = f.text_field :lat
+  .field
+    = f.label :lng
+    = f.text_field :lng
+  .actions = f.submit

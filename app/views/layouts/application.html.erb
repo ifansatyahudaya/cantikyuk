@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cantikyuk</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">Materialize</a>
+            <ul class="right side-nav" id="nav-mobile">
+              <li class="hide-on-small-only"><a href="parallax.html"><i class="mdi-navigation-arrow-back"></i></a></li>
+            </ul>
+            <a class="button-collapse" href="#" data-activates='nav-mobile'><i class="mdi-navigation-menu"></i></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <%= yield %>
+  </body>
+</html>

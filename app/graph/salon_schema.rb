@@ -1,0 +1,1 @@
+SalonSchema = GraphQL::Schema.define(query: QueryType)
